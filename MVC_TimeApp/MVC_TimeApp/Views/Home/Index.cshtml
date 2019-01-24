@@ -4,17 +4,21 @@
     <link href="~/StyleSheet.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Hello world!</h1>
-    <p>dickbutt</p>
+    <div id="time-box">
+        <h1>TIME</h1>
 
-    <form method="post">
-        <label name="startYear">Starting Year</label>
-        <input name="startYear" type="number" />
-
-        <label name="endYear">Endinging Year</label>
-        <input name="endYear" type="number" />
-
-        <button type="submit">Search</button>
-    </form>
+        <div id="search-box">
+        <p>Enter years to search between to see Time's People of the Year</p>
+            <form method="post">
+                <label name="startYear">Starting Year</label>
+                <input name="startYear" type="number" placeholder="Start Year"/>
+        
+                <label name="endYear">Endinging Year</label>
+                <input name="endYear" type="number" placeholder="End Year"/>
+        
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
