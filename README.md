@@ -8,5 +8,5 @@ Using a provided csv data file, this web app allows users to search a list of Ti
 - If the range entered was valid, the next page will display a table of Time's Person of the Year in that range of years, along with infomration of each person.
 
 ## Screenshots
-![home]()
-![results]()
+![home](https://github.com/mbgoseco/Lab11-My-First-MVC-App/blob/master/assets/home.PNG)
+![results](https://github.com/mbgoseco/Lab11-My-First-MVC-App/blob/master/assets/results.PNG)
