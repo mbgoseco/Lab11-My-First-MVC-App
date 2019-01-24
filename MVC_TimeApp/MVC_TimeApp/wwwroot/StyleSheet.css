@@ -1,3 +1,46 @@
 ﻿body {
-    background-color: royalblue;
+    background: url(timeBG.jpg);
+    background-size: cover;
+    margin: 0;
+    border: 0;
+}
+
+#time-box {
+    margin-left: auto;
+    margin-right: auto;
+    border: 12px solid red;
+    background-color: white;
+    width: 35vw;
+    height: 96vh;
+    font-family:'Times New Roman';
+    font-size: 5em;
+    text-align: center;
+    color: red;
+}
+
+#search-box {
+    padding-top: 20vh;
+    font-family: 'Trebuchet MS';
+    color: black;
+    font-size: 0.25em;
+}
+
+input {
+    width: 5vw;
+    height: 4vh;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 85vw;
+    font-family: 'Trebuchet MS';
+    font-size: 1.25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, tr, th, td {
+    border: 3px ridge gray;
+    padding: 1px;
 }

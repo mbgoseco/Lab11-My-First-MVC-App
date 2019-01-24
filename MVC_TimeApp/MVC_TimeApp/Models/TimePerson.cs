@@ -21,10 +21,11 @@ namespace MVC_TimeApp.Models
         public static List<TimePerson> GetPersons(int startYear, int endYear)
         {
             List<TimePerson> people = new List<TimePerson>();
-            //read in teh file
-            //File.ReadAllLines (in an array)
+            
+            // Reads the csv file as an array of string lines
             string[] dataArray = File.ReadAllLines(@"C:\Users\MBG\codefellows\401\Lab11-My-First-MVC-App\MVC_TimeApp\MVC_TimeApp\wwwroot\personOfTheYear.csv");
 
+            // Splits each by commas to store data into each TimePerson property, then stores it to a people list.
             for (int i = 1; i < dataArray.Length; i++)
             {
                 TimePerson entry = new TimePerson();
@@ -59,28 +60,10 @@ namespace MVC_TimeApp.Models
                 people.Add(entry);
             }
 
+            // Filters people list to the range between startYear and endYear
             List<TimePerson> searchQuery = people.Where(p => (p.Year >= startYear) && (p.Year <= endYear)).ToList();
 
             return searchQuery;
-
-            // iterate through that array and set values appropriately to a new TimePerson Object
-
-            // CSV file is comma delimited
-
-            //create full list of peoples from csv file
-
-            // THEN do LINQ query with lambdas to filter
-
-            //TimePerson tp = new TimePerson();
-            //tp.Name = "Mike";
-            //tp.Honor = "Being Awesome";
-            //tp.Category = "Dog Lover";
-
-            //people.Add(tp);
-
-            //return people;
-
-            //List<TimePerson> listOfPeople = people.Where(p => (p.Year >= startYear) && (p.Year <= endYear)).toList();
         }
     }
 }
